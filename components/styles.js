@@ -63,51 +63,11 @@ export const roundedEdges = css`
   border-radius: 0.5rem;
 `
 
-export const passingText = css`
-  background: ${theme.colour.greenDark};
-  font-size: ${theme.font.md};
-  color: ${theme.colour.white};
-  padding: ${theme.spacing.xxs} 0 ${theme.spacing.xxs} 0;
-  text-align: center;
-  height: 1.4rem;
-  ${roundedEdges};
-
-  ${mediaQuery.sm(css`
-    border-radius: 0.4rem;
-    -webkit-border-radius: 0.4rem;
-    -moz-border-radius: 0.4rem;
-    border-radius: 0.4rem;
-  `)};
-`
-
-export const failingText = css`
-  background: ${theme.colour.redDark};
-  font-size: ${theme.font.sm};
-  padding: ${theme.spacing.xxs} 0 ${theme.spacing.xxs} 0;
-  color: ${theme.colour.white};
-  text-align: center;
-  ${roundedEdges};
-
-  ${mediaQuery.sm(css`
-    border-radius: 0.4rem;
-    -webkit-border-radius: 0.4rem;
-    -moz-border-radius: 0.4rem;
-    border-radius: 0.4rem;
-  `)};
-`
-
-export const passingFill = css`
-  background: ${theme.colour.greenDark};
-`
-
-export const failingFill = css`
-  background: ${theme.colour.redDark};
-`
-
 /*
  * Hide only visually, but have it
  * available for screenreaders
  */
+
 export const visuallyhidden = css`
   border: 0;
   clip: rect(0 0 0 0);
@@ -123,24 +83,5 @@ export const visuallyhidden = css`
 export const visuallyhiddenMobile = css`
   ${mediaQuery.sm(css`
     ${visuallyhidden};
-  `)};
-`
-
-export const actionsBottom = css`
-  margin-top: ${theme.spacing.xl};
-  svg {
-    fill: ${theme.colour.white};
-  }
-
-  span {
-    margin: ${theme.spacing.md} ${theme.spacing.md} ${theme.spacing.md} 0;
-    color: ${theme.colour.white};
-    text-decoration: underline;
-  }
-
-  ${mediaQuery.sm(css`
-    a[name='print-button'] {
-      display: none;
-    }
   `)};
 `
